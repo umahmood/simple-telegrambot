@@ -6,7 +6,7 @@ import requests
 
 __author__     = "Usman Mahmood"
 __license__    = "MIT"
-__version__    = "1.0.0"
+__version__    = "1.0.2"
 __maintainer__ = "Usman Mahmood"
 
 class TelegramBot:
