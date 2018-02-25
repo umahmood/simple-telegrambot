@@ -12,7 +12,7 @@ easy to extend.
 # test-bot.py
 from datetime import datetime, timezone
 
-import simpletelegrambot
+from simpletelegrambot import telegrambot
 
 def on_message_receive(bot, message):
     utc_time = datetime.utcfromtimestamp(1504981128)
@@ -25,7 +25,7 @@ def on_message_receive(bot, message):
         bot.send_message('Pong')
     
 def main():
-    bot   = simpletelegrambot.TelegramBot('<bot-token>')
+    bot   = telegrambot.TelegramBot('<bot-token>')
     bot.set_message_handler(on_message_receive)
     bot.wait_for_messages()
 
