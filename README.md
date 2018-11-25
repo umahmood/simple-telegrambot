@@ -15,7 +15,7 @@ from datetime import datetime, timezone
 from simpletelegrambot import telegrambot
 
 def on_message_receive(bot, message):
-    utc_time = datetime.utcfromtimestamp(1504981128)
+    utc_time = datetime.utcnow()
     msg_time = utc_time.strftime('%Y-%m-%d %H:%M:%S (UTC)')
     msg_text = message['text']
 
@@ -36,8 +36,8 @@ Output:
 
 ```
 $ python test_bot.py
-2017-09-09 18:18:48 (UTC) Hello
-2017-09-09 18:18:48 (UTC) Ping
+2018-11-25 18:33:51 (UTC) Ping
+2018-11-25 18:33:52 (UTC) Pong
 ```
 
 # Testing
